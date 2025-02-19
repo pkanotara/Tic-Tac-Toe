@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 40px 30px;
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+  position: relative;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: inherit;
+}
+.scoreboard {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #333;
+}
+.scoreboard p {
+  margin: 4px 0;
+}
+.status {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #555;
+}
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.cell {
+  background-color: #f0f0f0;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.cell:hover,
+.cell:focus {
+  background-color: #e0e0e0;
+  outline: none;
+  transform: scale(1.03);
+}
+.cell:active {
+  transform: scale(0.98);
+}
+.winning-cell {
+  animation: winHighlight 0.5s forwards;
+}
+@keyframes winHighlight {
+  to {
+    background-color: #c8e6c9;
+  }
+}
+.controls {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.controls button {
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.controls button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+.controls button:hover:not(:disabled) {
+  background-color: #7e3ff2;
+  transform: translateY(-2px);
+}
+.toggle-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.toggle-btn:hover {
+  transform: scale(1.1);
+}
+/* Dark Theme */
+.dark-theme body {
+  background: #333;
+  color: #fff;
+}
+.dark-theme .container {
+  background: #444;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.dark-theme .cell {
+  background-color: #555;
+  border-color: #666;
+  color: #fff;
+}
+.dark-theme .cell:hover,
+.dark-theme .cell:focus {
+  background-color: #666;
+}
+.dark-theme .scoreboard,
+.dark-theme .status {
+  color: #eee;
+}
