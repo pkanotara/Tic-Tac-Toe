@@ -1,41 +1,40 @@
-# Tic Tac Toe Enhanced
+# Tic Tac Toe Enhanced 🚀
 
-This is an enhanced version of the classic Tic Tac Toe game. It features a challenging AI opponent using a minimax algorithm with alpha‑beta pruning, undo/redo functionality, and toggle buttons for dark/light mode and switching between Player vs Player and Player vs AI modes.
+Welcome to **Tic Tac Toe Enhanced** – a modern twist on the classic game! Challenge your friends or test your skills against an unbeatable AI 🤖. Enjoy smooth dark/light mode toggling 🌙/☀️, undo/redo moves 🔄, and a responsive design that works great on any device.
 
-## Features
+---
+
+## 🎮 Features
 
 - **Challenging AI:**  
-  Uses an unbeatable minimax algorithm with alpha‑beta pruning when in AI mode.
-
+  Battle an AI powered by a minimax algorithm with alpha‑beta pruning for tough competition.
 - **Game Modes:**  
-  - **Player vs Player:** Compete with a friend.
-  - **Player vs AI:** Toggle to play against a smart AI.
-
+  - **Player vs Player:** Play against a friend 👥.  
+  - **Player vs AI:** Toggle to challenge an intelligent computer opponent 🤖.
 - **Undo/Redo Moves:**  
-  Easily undo or redo moves to refine your strategy.
-
+  Revisit your gameplay by undoing or redoing moves 🔙🔜.
 - **Dark/Light Mode Toggle:**  
-  Switch between dark and light themes instantly.
-
+  Easily switch between dark and light themes with a single click 🌙/☀️.
 - **Responsive & Accessible:**  
-  Designed to work well on both desktop and mobile devices with keyboard navigation support.
+  Enjoy a seamless experience on both desktop and mobile devices 📱💻.
 
-## Demo
+---
 
-To view a demo of the game, simply open the `index.html` file in your web browser. Alternatively, if you have published the project on GitHub Pages, you can view the live demo here:
+## 🌐 Live Demo
 
-[Live Demo](https://pkanotara.github.io/Tic-Tac-Toe/)
+Check out the live demo of the game here:  
+[👉 Live Demo](https://pkanotara.github.io/Tic-Tac-Toe/)
 
-## Getting Started
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Edge, Safari, etc.)
-- (Optional) A local development server (like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for VSCode) for easier testing.
+- A modern web browser (Chrome, Firefox, Edge, Safari, etc.) 🌐
 
 ### Installation
 
-1. **Clone the repository:**
+1. **Clone the Repository:**
 
    ```bash
    git clone https://github.com/pkanotara/Tic-Tac-Toe.git
